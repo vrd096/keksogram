@@ -10,10 +10,10 @@ var randomString = function (param) {
     return randomParam;
  };
 
-var CreateObject = function () {
+var CreateObject = function (value) {
     var instaObject = {};
     var instaArray = [];
-    for (var i = 1; i <= 25; i++) {
+    for (var i = 1; i <= value; i++) {
         
         instaObject.url = 'photos/' + i + '.jpg';
         instaObject.likes = randomLike(15, 200);
@@ -33,4 +33,4 @@ var CreateObject = function () {
     console.log(instaArray); 
    
 };
-CreateObject();
+CreateObject(25);
