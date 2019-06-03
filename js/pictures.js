@@ -13,14 +13,16 @@ var randomString = function (param) {
 var CreateObject = function () {
     var instaObject = {};
     var instaArray = [];
-    for (var i = 0; i < 25; i++) {
+    for (var i = 1; i <= 25; i++) {
         
         instaObject.url = 'photos/' + i + '.jpg';
         instaObject.likes = randomLike(15, 200);
         instaObject.comments = randomString(instaComments);
         instaObject.description = randomString(instaDescription);
-        // console.log(instaObject);
-        instaArray.push(instaObject)
+        
+        console.log(instaObject);
+        instaArray.push(instaObject);
+        
     }
     // for (var i = 0; i < instaArray.length; i++) {
     //     instaObject.url = 'photos/' + i + '.jpg';
