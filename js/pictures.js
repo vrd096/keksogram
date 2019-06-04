@@ -13,8 +13,6 @@ var randomString = function (param) {
  };
 
 var CreateObject = function (value) {
-   
-
     for (var i = 1; i <= value; i++) {
         var instaObject = {
             url: 'photos/' + i + '.jpg',
@@ -24,7 +22,6 @@ var CreateObject = function (value) {
         };  
         instaArray.push(instaObject);
     }
-    
     return instaArray;
 };
 CreateObject(25);
@@ -39,7 +36,12 @@ var makeElement = function (tagName, className, text) {
     };
 
 var renderCards = function () {
-   
+   var photosLink = document.querySelector('.pictures');
+   var fragment = document.createDocumentFragment();
+
+   for (var i = 0; i < instaArray.length; i++) {
+    var listItem = makeElement('li', 'good');
+   }
 };
 renderCards();
 
