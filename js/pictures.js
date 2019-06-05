@@ -36,13 +36,33 @@ var makeElement = function (tagName, className, text) {
     };
 
 var renderCards = function () {
-   var photosLink = document.querySelector('.pictures');
-   var fragment = document.createDocumentFragment();
+    var photoLink = document.querySelector('.pictures');
+    var image = makeElement('img', 'picture__image');
+    // image.src = instaArray[0].url;
 
-   for (var i = 0; i < instaArray.length; i++) {
-    var listItem = makeElement('li', 'good');
-   }
+
+
+
+//    for (var i = 0; i < instaArray.length; i++) {
+//         var image = pictureElement.querySelector('img'); 
+//         image.src = instaArray[i].url;
+        
+//    }
+   
 };
-renderCards();
 
+
+var pictureElement = pictureTemplate.cloneNode(true);
+// var image = pictureElement.querySelector('img'); 
+// var pictureComment = pictureElement.querySelector('.picture-comments');
+// var pictureList = document.querySelector('.picture');
+// var fragment = document.createDocumentFragment();
+// for (var i = 0; i < instaArray.length; i++) {
+    
+// };
+
+// fragment.appendChild(renderCards(instaArray));
+
+// console.log(fragment);
 // console.log(instaArray);
+document.querySelector('').classList.remove('hidden');
